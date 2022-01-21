@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body{
+                text-align:center;
+                margin:50px;
+            }
+            div{
+                padding:20px;
+            }
+            #main td{
+                text-align:left;
+            }
+            #input{
+                width:200px;
+            }
+            #unique{
+                width:86px;
+            }
+            .special{
+                padding:5px;
+                text-decoration:none;
+            }
+            .special:hover{
+                text-decoration:underline;
+            }
+            #last{
+                background-color:cornflowerblue;
+                color:white;
+                border-radius:5px;
+                padding-left:10px;
+                padding-right:10px;
+                padding-top:4px;
+                padding-bottom:4px;
+                border:white;
+            }
+            #last:hover{
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+            <table id="main" align="center">
+                <tr>
+                    <td> all these words : </td>
+                    <td><input id="input" type="text" name="as_q" placeholder="Type here"></td>
+                </tr>
+                <tr>
+                    <td> this exact word or phrase : </td>
+                    <td><input id="input" type="text" name="as_epq" placeholder="Type here"></td>
+                </tr>
+                <tr>
+                    <td> any of these words : </td>
+                    <td><input id="input" type="text" name="as_oq" placeholder="Type here"></td>
+                </tr>
+                <tr>
+                    <td> none of these words : </td>
+                    <td><input id="input" type="text" name="as_eq" placeholder="Type here"></td>
+                </tr>
+                <tr>
+                    <td> numbers ranging from :</td>
+                    <td><input id="unique" type="text" name="as_nlo" placeholder="Type here"> to <input id="unique" type="text" name="as_nhi" placeholder="Type here"></td>
+                </tr>
+            </table>
+            </div>
+            <div>
+                <input id="last" type="submit" value="Advanced Search">
+            </div>
+            <div id="special">
+                <table align="center">
+                    <tr>
+                        <td style="padding-right:5px;"><a href="google.html" class="special"> Regular Search </a></td>
+                        <td style="padding-left:5px;"><a href="image.html" class="special"> Search Image </a></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            body{
+                text-align:center;
+                margin:50px;
+            }
+            div{
+                padding:20px;
+            }
+            .special{
+                padding:5px;
+                text-decoration:none;
+            }
+            .special:hover{
+                text-decoration:underline;
+            }
+            #sbar{
+                width:500px;
+                height:40px;
+                font-size:16px;
+                border-radius:35px;
+                padding-left:30px;
+                border:1px solid lightgray;
+            }
+            #sbar:hover{
+                box-shadow:0 1px 6px;
+            }
+            .option{
+                padding:10px;
+                border:1px solid white;
+                border-radius:5px;
+            }
+            .option:hover{
+                border:1px solid lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="google 1.png">
+        </div>
+            <form action="https://images.google.com/images">
+        <div>
+            <input id="sbar" type="text" placeholder="Type here" name="q">
+        </div>
+        <div>
+            <input class="option" type="submit" value="Google Search">
+            <input class="option" type="submit" value="I'm Feeling Lucky">  
+        </div>
+        <div id="special">
+            <table align="center">
+                <tr>
+                    <td style="padding-right:5px;"><a href="google.html" class="special"> Regular Search </a></td>
+                    <td style="padding-left:5px;"><a href="advance.html" class="special"> Advanced Search </a></td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </body>
+</html>  
